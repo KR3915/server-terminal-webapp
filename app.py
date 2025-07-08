@@ -32,8 +32,8 @@ def index():
         f.write(f"\n[{time}] {user_ip}")
     
     if request.method == "POST":
-        if "spustit_a" in request.form:
-            subprocess.Popen(["python3", "skript_a.py"])
+        if "spustit_api" in request.form:
+            return render_template("API.html")
         elif "spustit_b" in request.form:
             subprocess.Popen(["python3", "skript_b.py"])
 
