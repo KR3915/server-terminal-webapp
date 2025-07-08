@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
     <title>Ovládací panel</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='libs/three.r134.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='libs/vanta.net.min.js') }}"></script>
+    <script>
+    window.onload = function() {
+      VANTA.NET({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00
+      })
+    }
+    </script>
 </head>
 <body>
-    <h1>Spouštění skriptů</h1>
+    <!-- Pozadí pro Vanta efekt -->
+    <div id="vanta-bg" style="width:100vw; height:100vh; position:fixed; top:0; left:0; z-index:-1;"></div>
+
+    <h1 class="title_H">Ovládací panel</h1>
     <form method="post">
-        <button class="modern-button" type="submit" name="spustit_a">Spustit skript A</button>
-        <button type="submit" name="spustit_b">Spustit skript B</button>
+        <div class="button_container1">
+            <button class="modern-button" type="submit" name="spustit_a">Spustit skript A</button>
+        </div>
     </form>
 </body>
 </html>

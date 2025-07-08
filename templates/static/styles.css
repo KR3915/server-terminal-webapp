@@ -1,8 +1,18 @@
-body{
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}   
+body {
+  display: flex;
+  justify-content: center; /* horizontální střed */
+  align-items: center;    /* vertikální střed */
+  height: 300px;          /* musí mít výšku, aby to fungovalo */
+  border: 1px solid #000;
 }
 .modern-button {
             /* Vizuální vzhled */
-            background: linear-gradient(145deg, #6a11cb 0%, #2575fc 100%); /* Gradient pozadí */
+            background: linear-gradient(145deg, #60a11b 0%, #2575fc 100%); /* Gradient pozadí */
             color: #ffffff; /* Barva textu */
             border: none; /* Bez okraje */
             border-radius: 12px; /* Zaoblené rohy */

@@ -1,9 +1,18 @@
-title{
-    background-color: #2575fc;
+h1{
+  display: flex;
+  justify-content: center; /* horizontální střed */
+  align-items: center;    /* vertikální střed */
+  height: 100px;          /* musí mít výšku, aby to fungovalo */
+}
+.button_container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 .modern-button {
             /* Vizuální vzhled */
-            background: linear-gradient(145deg, #6a11cb 0%, #2575fc 100%); /* Gradient pozadí */
+            background: linear-gradient(145deg, #6a1000 0%, #2575fc 100%); /* Gradient pozadí */
             color: #ffffff; /* Barva textu */
             border: none; /* Bez okraje */
             border-radius: 12px; /* Zaoblené rohy */
