@@ -1,0 +1,22 @@
+
+[2025-07-09 00:08:44] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.14:5000
+[2025-07-09 00:08:44] [33mPress CTRL+C to quit[0m
+[2025-07-09 00:08:59] Request from 127.0.0.1
+[2025-07-09 00:08:59] 127.0.0.1 - - [09/Jul/2025 00:08:59] "POST / HTTP/1.1" 200 -
+[2025-07-09 00:08:59] 127.0.0.1 - - [09/Jul/2025 00:08:59] "GET /static/style.css HTTP/1.1" 200 -
+[2025-07-09 00:08:59] 127.0.0.1 - - [09/Jul/2025 00:08:59] "GET /static/libs/vanta.net.min.js HTTP/1.1" 200 -
+[2025-07-09 00:08:59] 127.0.0.1 - - [09/Jul/2025 00:08:59] "[36mGET /static/libs/three.r134.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:08:59] 127.0.0.1 - - [09/Jul/2025 00:08:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-07-09 00:14:43] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.14:5000
+[2025-07-09 00:14:43] [33mPress CTRL+C to quit[0m
+[2025-07-09 00:14:50] Request from 127.0.0.1
+[2025-07-09 00:14:50] 127.0.0.1 - - [09/Jul/2025 00:14:50] "POST / HTTP/1.1" 200 -
+[2025-07-09 00:14:50] 127.0.0.1 - - [09/Jul/2025 00:14:50] "GET /static/style.css HTTP/1.1" 200 -
+[2025-07-09 00:14:50] 127.0.0.1 - - [09/Jul/2025 00:14:50] "[36mGET /static/libs/three.r134.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:14:50] 127.0.0.1 - - [09/Jul/2025 00:14:50] "[36mGET /static/libs/vanta.net.min.js HTTP/1.1[0m" 304 -
