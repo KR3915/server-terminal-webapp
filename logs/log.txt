@@ -20,3 +20,170 @@
 [2025-07-09 00:14:50] 127.0.0.1 - - [09/Jul/2025 00:14:50] "GET /static/style.css HTTP/1.1" 200 -
 [2025-07-09 00:14:50] 127.0.0.1 - - [09/Jul/2025 00:14:50] "[36mGET /static/libs/three.r134.min.js HTTP/1.1[0m" 304 -
 [2025-07-09 00:14:50] 127.0.0.1 - - [09/Jul/2025 00:14:50] "[36mGET /static/libs/vanta.net.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:49:58] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.14:5000
+[2025-07-09 00:49:58] [33mPress CTRL+C to quit[0m
+[2025-07-09 00:50:08] Request from 127.0.0.1
+[2025-07-09 00:50:08] 127.0.0.1 - - [09/Jul/2025 00:50:08] "POST / HTTP/1.1" 200 -
+[2025-07-09 00:50:08] 127.0.0.1 - - [09/Jul/2025 00:50:08] "[36mGET /static/libs/three.r134.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:50:08] 127.0.0.1 - - [09/Jul/2025 00:50:08] "GET /static/style.css HTTP/1.1" 200 -
+[2025-07-09 00:50:08] 127.0.0.1 - - [09/Jul/2025 00:50:08] "[36mGET /static/libs/vanta.net.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:50:09] Request from 127.0.0.1
+[2025-07-09 00:50:09] Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/kr3915/Documents/python/webapp/private_webapp/app.py", line 36, in index
+    return render_template("API.html")
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: API.html
+[2025-07-09 00:50:09] 127.0.0.1 - - [09/Jul/2025 00:50:09] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2025-07-09 00:50:53] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.14:5000
+[2025-07-09 00:50:53] [33mPress CTRL+C to quit[0m
+[2025-07-09 00:50:57] Request from 127.0.0.1
+[2025-07-09 00:50:57] Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/kr3915/Documents/python/webapp/private_webapp/app.py", line 36, in index
+    return render_template("API.html")
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: API.html
+[2025-07-09 00:50:57] 127.0.0.1 - - [09/Jul/2025 00:50:57] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2025-07-09 00:51:00] 127.0.0.1 - - [09/Jul/2025 00:51:00] "GET /static/style.css HTTP/1.1" 200 -
+[2025-07-09 00:51:00] 127.0.0.1 - - [09/Jul/2025 00:51:00] "GET /static/libs/vanta.net.min.js HTTP/1.1" 200 -
+[2025-07-09 00:51:01] Request from 127.0.0.1
+[2025-07-09 00:51:01] Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/kr3915/Documents/python/webapp/private_webapp/app.py", line 36, in index
+    return render_template("API.html")
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: API.html
+[2025-07-09 00:51:01] 127.0.0.1 - - [09/Jul/2025 00:51:01] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2025-07-09 00:51:08] Request from 127.0.0.1
+[2025-07-09 00:51:08] 127.0.0.1 - - [09/Jul/2025 00:51:08] "POST / HTTP/1.1" 200 -
+[2025-07-09 00:51:08] 127.0.0.1 - - [09/Jul/2025 00:51:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-07-09 00:51:08] 127.0.0.1 - - [09/Jul/2025 00:51:08] "[36mGET /static/libs/three.r134.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:51:08] 127.0.0.1 - - [09/Jul/2025 00:51:08] "[36mGET /static/libs/vanta.net.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:51:09] Request from 127.0.0.1
+[2025-07-09 00:51:09] Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/kr3915/Documents/python/webapp/private_webapp/app.py", line 36, in index
+    return render_template("API.html")
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/kr3915/Documents/python/webapp/private_webapp/.venv/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: API.html
+[2025-07-09 00:51:09] 127.0.0.1 - - [09/Jul/2025 00:51:09] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2025-07-09 00:53:15] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.14:5000
+[2025-07-09 00:53:15] [33mPress CTRL+C to quit[0m
+[2025-07-09 00:53:32] Request from 127.0.0.1
+[2025-07-09 00:53:32] 127.0.0.1 - - [09/Jul/2025 00:53:32] "POST / HTTP/1.1" 200 -
+[2025-07-09 00:53:32] 127.0.0.1 - - [09/Jul/2025 00:53:32] "[36mGET /static/libs/three.r134.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:53:32] 127.0.0.1 - - [09/Jul/2025 00:53:32] "[36mGET /static/libs/vanta.net.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 00:53:32] 127.0.0.1 - - [09/Jul/2025 00:53:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-07-09 00:53:33] Request from 127.0.0.1
+[2025-07-09 00:53:33] 127.0.0.1 - - [09/Jul/2025 00:53:33] "POST / HTTP/1.1" 200 -
+[2025-07-09 00:53:33] 127.0.0.1 - - [09/Jul/2025 00:53:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-07-09 01:27:45] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.14:5000
+[2025-07-09 01:27:45] [33mPress CTRL+C to quit[0m
+[2025-07-09 01:30:15] Request from 127.0.0.1
+[2025-07-09 01:30:15] 127.0.0.1 - - [09/Jul/2025 01:30:15] "POST / HTTP/1.1" 200 -
+[2025-07-09 01:30:15] 127.0.0.1 - - [09/Jul/2025 01:30:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-07-09 01:30:21] Request from 127.0.0.1
+[2025-07-09 01:30:21] 127.0.0.1 - - [09/Jul/2025 01:30:21] "POST / HTTP/1.1" 200 -
+[2025-07-09 01:30:21] 127.0.0.1 - - [09/Jul/2025 01:30:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-07-09 01:30:21] 127.0.0.1 - - [09/Jul/2025 01:30:21] "[36mGET /static/libs/three.r134.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 01:30:21] 127.0.0.1 - - [09/Jul/2025 01:30:21] "[36mGET /static/libs/vanta.net.min.js HTTP/1.1[0m" 304 -
+[2025-07-09 01:30:22] Request from 127.0.0.1
+[2025-07-09 01:30:22] 127.0.0.1 - - [09/Jul/2025 01:30:22] "POST / HTTP/1.1" 200 -
+[2025-07-09 01:30:22] 127.0.0.1 - - [09/Jul/2025 01:30:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

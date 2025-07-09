@@ -2,7 +2,9 @@ h1{
   display: flex;
   justify-content: center; /* horizontální střed */
   align-items: center;    /* vertikální střed */
-  height: 100px;          /* musí mít výšku, aby to fungovalo */
+  height: 100px;
+  color: aliceblue; 
+  font-family: sans-serif;         /* musí mít výšku, aby to fungovalo */
 }
 .button_container1 {
     display: flex;
