@@ -10,8 +10,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-}
+/* }vú */
 .modern-button {
             /* Vizuální vzhled */
             background: linear-gradient(145deg, #6a1000 0%, #2575fc 100%); /* Gradient pozadí */

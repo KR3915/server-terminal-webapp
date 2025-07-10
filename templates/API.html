@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    
-    <title>Ovládací panel</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="utf-8">
+  <title>Web Terminál</title>
+  <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+  <style>
+    body { background: #000; color: #0f0; font-family: monospace; padding: 10px; }
+    #terminal { white-space: pre-wrap; }
+    #input { outline: none; border: none; background: transparent; color: #0f0; width: 100%; }
+  </style>
 </head>
 <body>
-    
+  <div id="terminal"></div>
+  <input type="text" id="input" autofocus autocomplete="off" />
+  <script>
+    const socket = io();
+
+    const terminal = document.getElementById("terminal");
+    const input = document.getElementById("input");
+
+    socket.on("connect", () => {
+      terminal.innerHTML += "[connected]\n";
+    });
+
+    socket.on("output", data => {
+      terminal.innerHTML += data;
+      terminal.scrollTop = terminal.scrollHeight;
+    });
+
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        const command = input.value + "\n";
+        terminal.innerHTML += "> " + input.value + "\n";
+        socket.emit("input", command);
+        input.value = "";
+      }
+    });
+  </script>
 </body>
 </html>
